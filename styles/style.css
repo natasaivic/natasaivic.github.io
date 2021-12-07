@@ -1,7 +1,7 @@
-
 html {
-    background-color: #009f3a;
-  }
+    /*background-color: #009f3a;*/
+    background-color: #355440;
+}
 
 a {
     color: green;
@@ -20,8 +20,9 @@ h1 {
 }
 
 body {
-    width: 1200px; /* or fit-content*/
-    margin: 0 auto; 
+    width: 1200px;
+    /* or fit-content*/
+    margin: 0 auto;
     text-align: center;
     background-color: #bbd8e3;
     padding: 0 20px 20px 20px;
@@ -31,10 +32,22 @@ body {
 img {
     display: block;
     margin: 0 auto;
-  }
+}
+
+ul {
+    background: rgb(157, 176, 141);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+dl {
+    background: rgb(157, 176, 141);
+    padding: 10px;
+    border: 1px solid black;
+}
 
 li {
     width: 300px;
-    margin: auto;
+    margin-left: 40px;
     text-align: left
 }
