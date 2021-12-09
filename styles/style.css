@@ -51,3 +51,24 @@ li {
     margin-left: 40px;
     text-align: left
 }
+
+div {
+    img {
+        display: block;
+    }
+    .table {
+        display: table;
+    }
+    .row {
+        display: table-rwo;
+    }
+    .cell {
+        display: table-cell;
+    }
+    .bg-image-wrapper {
+        display: inline-block;
+        background: url(http://placehold.it/200x200);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
