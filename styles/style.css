@@ -3,6 +3,21 @@ html {
     background-color: #355440;
 }
 
+.special {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.outer {
+    border: 5px solid black;
+}
+
+.box {
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(121, 164, 140);
+    color: white;
+}
+
 a {
     color: green;
 }
@@ -50,6 +65,11 @@ li {
     width: 300px;
     margin-left: 40px;
     text-align: left
+}
+
+li {
+    list-style-type: none;
+    /* list-style-type: "\1F44D"; */
 }
 
 div {
