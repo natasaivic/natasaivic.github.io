@@ -1,0 +1,84 @@
+html {
+    background-color: #dadf74;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 0;
+    padding: 20px 0;
+    color: #2f79bd;
+    text-shadow: 1px 2px 1px rgb(87, 113, 152);
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid rgb(82, 118, 83);
+    border-radius: 1em;
+}
+
+h2 {
+    text-align: left;
+}
+
+legend.my-legend {
+    font-size: 20px;
+    color: #2f40bd;
+}
+
+fieldset {
+    width: 395px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: right;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input[type=radio] {
+    width: auto;
+    border: none;
+}
+
+button {
+    margin: 20px 0 0 124px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(31, 70, 169);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
