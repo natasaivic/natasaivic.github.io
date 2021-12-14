@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/cookbook.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <section>
+            <input id="number" name="number" disabled="true">
+        </section>
+        <section>
+            <button type="button" class="favorite styled" onclick="enter(7)">7</button>
+            <button type="button" class="favorite styled" onclick="enter(8)">8</button>
+            <button type="button" class="favorite styled" onclick="enter(9)">9</button>
+            <button type="button" class="favorite styled" onclick="operation('/')">/</button>
+        </section>
+        <section>
+            <button type="button" class="favorite styled" onclick="enter(4)">4</button>
+            <button type="button" class="favorite styled" onclick="enter(5)">5</button>
+            <button type="button" class="favorite styled" onclick="enter(6)">6</button>
+            <button type="button" class="favorite styled" onclick="operation('*')">*</button>
+        </section>
+        <section>
+            <button type="button" class="favorite styled" onclick="enter(1)">1</button>
+            <button type="button" class="favorite styled" onclick="enter(2)">2</button>
+            <button type="button" class="favorite styled" onclick="enter(3)">3</button>
+            <button type="button" class="favorite styled" onclick="operation('-')">-</button>
+        </section>
+        <section>
+            <button type="button" class="favorite styled" onclick="enter(0)">0</button>
+            <button type="button" class="favorite styled" onclick="clear2()">C</button>
+            <button type="button" class="favorite styled" onclick="calculate()">=</button>
+            <button type="button" class="favorite styled" onclick="operation('+')">+</button>
+        </section>
+    </form>
+
+    <script>
+        var OPERATION;
+        var OPERAND_1;
+        var OPERAND_2;
+
+        function enter(n) {
+            document.getElementById("number").value += n;
+        }
+
+        function operation(op) {
+            OPERAND_1 = parseInt(document.getElementById("number").value);
+            OPERATION = op;
+            document.getElementById("number").value = '';
+        }
+
+        function calculate() {
+            OPERAND_2 = parseInt(document.getElementById("number").value);
+
+            if (OPERATION == '+') {
+                document.getElementById("number").value = OPERAND_1 + OPERAND_2;
+            }
+            if (OPERATION == '-') {
+                document.getElementById("number").value = OPERAND_1 - OPERAND_2;
+            }
+            if (OPERATION == '*') {
+                document.getElementById("number").value = OPERAND_1 * OPERAND_2;
+            }
+            if (OPERATION == '/') {
+                document.getElementById("number").value = OPERAND_1 / OPERAND_2;
+            }
+        }
+
+        function clear2() {
+            document.getElementById("number").value = '';
+        }
+    </script>
+</body>
+
+</html>
