@@ -1,5 +1,15 @@
 html {
     font-family: sans-serif;
+    background-color: #a9bf86;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0;
+    padding: 20px 0;
+    color: #142b41;
+    text-shadow: 1px 2px 1px rgb(87, 113, 152);
+    text-align: center
 }
 
 body {
@@ -7,9 +17,34 @@ body {
     max-width: 800px;
     min-width: 480px;
     margin: 0 auto;
+    text-align: center
+}
+
+div.form {
+    display: table;
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 1em;
+    border: 2px solid #CCC;
+    border-radius: 1em;
+}
+
+.guessSubmit {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(59, 148, 102);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .lastResult {
-    color: rgb(237, 48, 48);
+    color: rgb(237, 184, 184);
     padding: 3px;
 }
